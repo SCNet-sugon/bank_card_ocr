@@ -1,5 +1,5 @@
 ---
-name: scnet-ocr
+name: bank_card_ocr
 description: 将图片中的文字、身份证、银行卡、营业执照、发票等信息识别并提取出来。本技能应在用户需要 OCR 识别图片中的文字，或识别身份证、银行卡、营业执照、增值税发票、出租车票、火车票、航空行程单、机动车销售统一发票时使用。
 version: 1.0.0
 author: SCNet
