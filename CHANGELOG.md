@@ -28,3 +28,8 @@
 
 ### 优化
 - update ClawHub 的安全扫描V2
+
+## [1.0.5] - 2025-04-15
+
+### 优化
+- update ClawHub 的安全扫描V3
