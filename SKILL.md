@@ -1,7 +1,7 @@
 ---
 name: bank_card_ocr
 description: 支持识别中国大陆银行卡，提取卡号、持卡人姓名（拼音/中文）、有效期及发卡行信息.
-version: 1.0.3
+version: 1.0.4
 author: SCNet
 license: MIT
 tags:
@@ -23,7 +23,7 @@ output: 结构化的 JSON 数据，包含识别结果和置信度
 ---
 # Sugon-Scnet 银行卡识别 OCR 技能
 
-本技能封装了 Sugon-Scnet 银行卡识别 OCR 服务，通过单一接口即可调用 10 种识别能力，高效提取文字及票据信息。
+本技能封装了 Sugon-Scnet 银行卡识别 OCR 服务，通过单一接口即可调用 1 种识别能力，高效提取文字及票据信息。
 
 ## 功能特性
 
