@@ -1,7 +1,7 @@
 ---
 name: bank_card_ocr
 description: 支持识别中国大陆银行卡，提取卡号、持卡人姓名（拼音/中文）、有效期及发卡行信息.
-version: 1.0.2
+version: 1.0.3
 author: SCNet
 license: MIT
 tags:
@@ -79,7 +79,7 @@ Token 过期后调用会返回 401 或 403 错误。更新方法：重新申请 
 ### 命令行调用示例
 
 ```bash
-   python .claude/skills/sugon-scnet-ocr/scripts/main.py VAT_INVOICE /path/to/invoice.jpg
+   python .claude/skills/sugon-scnet-ocr/scripts/main.py BANK_CARD /path/to/invoice.jpg
 ```
 
 ### 在 AI 对话中使用
