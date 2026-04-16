@@ -1,5 +1,5 @@
 name: bank_card_ocr
-version: 1.0.5
+version: 1.0.6
 description: 支持识别中国大陆银行卡，提取卡号、持卡人姓名（拼音/中文）、有效期及发卡行信息。
 author: SCNet
 license: MIT

@@ -1,7 +1,7 @@
 ---
 name: bank_card_ocr
 description: 支持识别中国大陆银行卡，提取卡号、持卡人姓名（拼音/中文）、有效期及发卡行信息.
-version: 1.0.5
+version: 1.0.6
 author: SCNet
 license: MIT
 tags:
@@ -11,7 +11,8 @@ tags:
   - 文字提取
 required_env_vars:
   - SCNET_API_KEY
-  - SCNET_API_BASE  # 可选，但有默认值
+optional_env_vars:
+  - SCNET_API_BASE
 primary_credential: SCNET_API_KEY
 dependencies:
   - python3
@@ -86,9 +87,16 @@ Token 过期后调用会返回 401 或 403 错误。更新方法：重新申请 
 
 用户可以说：
 
-- “帮我识别这张身份证，图片在 /Users/name/Downloads/id.jpg”
+- “帮我识别这张银行卡，图片在 /Users/name/Downloads/id.jpg”
 
 AI 会根据 description 中的关键词自动触发本技能。
+
+## ⚠️ 安全与隐私警告
+
+- **银行卡图像包含敏感信息**（卡号、持卡人姓名等），使用本技能会将该图像上传至 `https://api.scnet.cn` 进行 OCR 识别。
+- 请确保你已阅读并同意 [Scnet 隐私政策]，并确认该行为符合你的合规要求。
+- **不要在生产环境中使用真实银行卡图像**，除非你完全信任 Scnet 服务且数据加密传输得到保障。
+- 建议使用测试卡号或非敏感图像先行验证。
 
 ### AI 调用建议
 为避免触发 API 速率限制（10 QPS），请串行调用本技能，即等待前一个识别完成后再发起下一个请求。
